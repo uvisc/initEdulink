@@ -6,6 +6,9 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" />
+ <!--[if lt IE 9]>  
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]--> 
 </head>
 
 <body home home-new>
@@ -24,8 +27,8 @@
               
               
               <ul class="nav actions">
-                  <li><a href="https://kippt.com/login/" data-link="modal" data-target="#login-modal">Log In</a></li>
-                  <li><a href="https://kippt.com/signup/" data-link="modal" data-target="#signup-modal">Sign Up</a></li>
+                  <li><a href="#" data-link="modal" data-target="#login-modal">Log In</a></li>
+                  <li><a href="#signup-modal" data-toggle="modal" data-target="#signup-modal">Sign Up</a></li>
               </ul>
               
               
@@ -42,6 +45,91 @@
     
 </header>
 
+<!--Carousel Start-->
+<div id="bannerBG" class="bannerBG">
+<div id="bannerCarousel" class="carousel slide">
+<div id="banner-inner" class="carousel-inner">
+<div id="banner1" class="active">
+<section class="banner container">
+  <ul class="clearfix">
+    <li class="copy">
+      <h1>Hire Tutors  &amp; Get Guidance in any Subject</h1>
+      <p>Reach out to the the best online educators and teachers. We make it easy to find, hire and manage affordable Tutors.</p>
+      <div class="paddingTop10">
+        <div class="txt999 txt16px paddingTop5">
+        <input type="button" class="buttonGreen txt24px" utm_content="mainCallPostProject" value="Post Your Project. It's Free!" onclick="" title="Post Your Project. It's Free!" />&nbsp;
+        <!--<div class="txt999 txt16px" style="padding-left:50px;"><span class="txt999">-or-</span> &nbsp;<a href="/emp/search.aspx?keyword=" class="BlueLinks">Search for Freelancers</a></div>-->
+        </div>
+      </div>
+    </li>
+    <li class="graphic">
+      <figure class="computer"><img src="img/computer.png" /></figure>
+    </li>
+  </ul>
+</section> <!-- End Container -->
+</div> <!-- End Banner 1 --> 
+<div id="banner2" class="item"> 
+<!--<section class="banner container">
+  <ul class="clearfix">
+    <li class="copy">
+      <h1>Hire Tutors  &amp; Get Guidance in any Subject</h1>
+      <p>Reach out to the the best online educators and teachers. We make it easy to find, hire and manage affordable Tutors.</p>
+      <div class="paddingTop10">
+        <div class="txt999 txt16px paddingTop5">
+        <input type="button" class="buttonGreen txt24px" utm_content="mainCallPostProject" value="Post Your Project. It's Free!" onclick="" title="Post Your Project. It's Free!" />&nbsp;
+        <!--<div class="txt999 txt16px" style="padding-left:50px;"><span class="txt999">-or-</span> &nbsp;<a href="/emp/search.aspx?keyword=" class="BlueLinks">Search for Freelancers</a></div>-->
+<!--        </div>
+      </div>
+    </li>
+    <li class="graphic">
+      <figure class="computer"><img src="img/computer.png" /></figure>
+    </li>
+  </ul>
+</section>-->
+</div>
+<!-- Carousel nav -->
+  <a class="carousel-control left" href="#bannerCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#bannerCarousel" data-slide="next">&rsaquo;</a>
+</div> <!-- Banner Carousel Slide End-->
+</div> <!-- End  Banner Body-->
+
+<!-- Sign up Modal -->
+<div class="modal hide fade" id="signup-modal">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h1>Sign up for uDelink</h1>
+    
+    <!--<form class="connect-button" name="login" method="post" action="/social/twitter/redirect/" id="twitter-connect-form">
+    <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='T5UyStRW6cnqcQmM6surLLYrd1dYNoFz' /></div>
+    
+        <input type="hidden" name="next" value="/welcome/" />-->
+    
+<!--    <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="signup-twitter signup-btn" id="twitter_button" class="signup-twitter signup-btn"><i></i>Sign up with Twitter</a>
+    </form>
+    <form class="connect-button" name="login" method="post" action="/social/facebook/redirect/" id="facebook-connect-form">
+      <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='T5UyStRW6cnqcQmM6surLLYrd1dYNoFz' /></div>
+      
+          <input type="hidden" name="next" value="/welcome/" />
+      
+      <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="signup-facebook signup-btn" id="facebook_button"><i></i>Sign up with Facebook</a>
+      </form> -->
+
+      <form action="/signup" method="POST" autocomplete="off"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='T5UyStRW6cnqcQmM6surLLYrd1dYNoFz' /></div>
+          
+            <input type="hidden" name="next" value="/welcome/" />
+          
+        <fieldset>
+            <h5>Welcome to uDelink</h5>
+            <input type="text" placeholder="First-Name" name="firstname" maxlength="30" id="id_firstname" />
+                        <input type="text" placeholder="Last-Name" name="lastname" maxlength="30" id="id_lastname" />
+            <input type="email" placeholder="Email" name="email" maxlength="75" id="id_email" /><div class="email_suggestion"></div>
+            <input type="password" placeholder="Password" name="password" id="id_password" />
+            <input type="submit" value="Sign Up" class="btn">
+        </fieldset>
+         <a href="/login/"><span>Already have an account?</span> Log in</a>
+     </form>
+</div>
+
+<!-- End Sign up Modal -->
 <!-- Start FOOTER -->
 <footer>
      <p>
@@ -64,8 +152,11 @@
 
     <!--Javascripts ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bootstrap.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+   <!-- <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
@@ -76,6 +167,14 @@
     <script src="js/bootstrap-button.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script> -->
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#bannerBG').carousel()
+        })
+      }(window.jQuery)
+    </script>
 </body>
 </html>

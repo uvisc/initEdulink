@@ -1,0 +1,151 @@
+body section.container aside, section, hgroup, p, section.container p, aside div, aside div div.text, section footer div, section.container li.copy div div, section.row5 div figure div, section ul li,section ul li h1 {font-family: 'Open Sans', sans-serif; color:#444;}
+section.lookingfor .skills div.text {font-family: 'Open Sans', sans-serif; color:#666; font-size:14px; line-height:22px;}
+li.ansquote div.text {font-family: 'Open Sans', sans-serif; color:#999; font-size:16px; line-height:22px;}
+p {margin:0px; padding:0px;}
+.clearfix:after {    content: ".";    display: block;    height: 0;    clear: both;    visibility: hidden;    }	
+
+article, aside, figure, footer, header, hgroup, menu, nav, section { display:block; }
+section h2 {padding:0px 0px 15px 0px; color:#444; font-size:25px; font-family: 'Open Sans', sans-serif; font-weight:normal;} 
+section {margin-top:30px;}
+aside {margin-top:30px;}
+
+/*************************** SPRITE  ***************************************/
+.hpSprite {background:url(/images/hp/hpSpriteans.png) no-repeat; }
+  .hireImg {background-position:-0px 0px; width:308px; height:143px;}
+  .manageImg {background-position:-0px -143px; width:308px; height:143px;}
+  .payImg {background-position:-0px -286px; width:308px; height:143px;}  
+  .skillImg {background-position:-311px -0px;  width:460px; height:213px;}
+  .answers {background-position:-317px -20px;  width:160px; height:152px;}
+  .magSearch {background-position:-497px -227px;  width:38px; height:30px;}		
+  .magSearchHov {background-position:-536px -227px;  width:38px; height:30px;}		
+  .quotePic {background-position:-316px -226px;  width:180px; height:117px;}		
+  .companies {background-position:-319px -348px;  width:453px; height:74px;}		
+  
+ .hpSpritePro {background:url(/images/hp/hpSpritePro.png) no-repeat; } 
+  .createImgP {background-position:0px 0px; width:308px; height:143px;}
+  .winImgP {background-position:-308px 0px; width:308px; height:143px;}
+  .paidImgP {background-position:-616px 0px; width:308px; height:143px;}
+  .quotePicP {background-position:-0px -143px;  width:103px; height:114px;}		
+  .answersP {background-position:-658px -143px;  width:160px; height:150px;}
+  .magSearchP {background-position:-576px -151px;  width:38px; height:30px;}		
+  .magSearchHovP {background-position:-615px -151px;  width:38px; height:30px;}			
+  .tabArrowP {background-position:-576px -183px;  width:18px; height:11px;}	
+  .companiesP {background-position:-111px -144px;  width:453px; height:74px;}	
+/*************************** LAYOUTS ***************************************/
+
+/* Main Banner */
+div.bannerBG { background:url(/images/hp/BG-home-bammer.png) repeat-x; height:347px;}
+section.banner {margin-top:0px;}
+section.banner ul {margin:0px; padding:0px;}
+section.banner ul li {float:left; display:block; list-style-type:none;}
+section.banner ul li.copy h1 {font-size:37px; line-height: 40px; font-weight:600; font-family: 'Open Sans', sans-serif; padding:20px 0px 10px 0px}
+section.banner ul li.copy p {font-size:20px; color:#999;}
+section.banner ul li.copy {width:500px;}
+section.banner ul li.graphic {width:480px;}
+section.banner ul li.graphic .computer {position:absolute; margin:10px 0px 0px -80px; z-index:1}
+section.bannerpro ul {margin:0px; padding:0px; border-bottom:3px solid #ddd;}
+section.bannerpro ul li {float:left; display:block; list-style-type:none; height:252px;}
+
+section.bannerpro ul li.copy {width:950px;  background:url('/images/hp/map.png') no-repeat center; }
+section.bannerpro ul li.subcopy {width:420px; padding-left:30px;}
+section.bannerpro ul li.copy h1 { margin-top:30px;}
+section.bannerpro ul li.copy h1 .type1 {line-height:50px; font-size:40px; font-weight:normal; font-family: 'Open Sans', sans-serif;  color:#555;}
+section.bannerpro ul li.copy h1 .type2 {line-height:55px; font-size:65px; font-weight:500; color:#3F7F94;   }
+section.bannerpro ul li.copy h1 .type3 {line-height:50px; font-size:40px; font-weight:normal; font-family: 'Open Sans', sans-serif;  color:#555;}
+section.bannerpro ul li.copy h1 .type3 span {font-size:50px}
+section.bannerpro ul li.subcopy {}
+section.bannerpro ul li.subcopy h2 { padding:0px; margin-top:30px; font-size:20px; font-weight:600}
+section.bannerpro ul li.subcopy p {font-size:16px; color:#666}
+
+
+
+/* Process */
+section.process {margin-top:60px;}
+section.process .hire,.manage,.pay, .create, .win, .paid {width:308px; float:left; margin-right:29px;}
+section.process .pay, .paid {margin-right:0px;}
+section.process figure {margin:0px; display:block; padding:0px;}
+section.process figure img:hover{cursor:pointer; opacity: 0.8; -moz-opacity: 0.8; -khtml-opacity: 0.8; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80);}
+section.process h2 {padding-top:10px; padding-bottom:0px;}
+section.process p {font-size:14px; color:#666; padding-right:10px;}
+
+
+
+/*looking for */
+.bgSmQt {position:absolute; z-index:-40; margin-left:-10px; }
+section.lookingfor ul {margin:0px; padding:0px}
+section.lookingfor ul li  {float:left;  display:block; list-style-type:none;}
+section.lookingfor ul li.skills {width:50%; }
+section.lookingfor figure { margin: 0px;}
+section.lookingfor figure img {display: block;}
+section.lookingfor ul li.quote {width:50%;}
+section.lookingfor ul li.ansquote {width:510px;}
+section.lookingfor ul li.quote p {font-size:20px;  font-weight:600;  }	
+section.lookingfor ul li.quote figure {border:4px solid #ddd; margin-right:20px; float:left;}
+section.lookingfor ul li.ansquote figure {float:left; margin-right:10px;}
+section.lookingfor ul li.quote footer {color:#999; font-size:14px;padding-top:10px; }
+
+section.lookingfor ul li.stats {width:440px; padding-right:30px;  }
+section.lookingfor ul li.stats  p {font-size:16px; color:#999; line-height:22px; font-family: 'Open Sans', sans-serif;}
+
+section.lookingfor .squote {z-index: 0; position: absolute; margin-left: 120px;}
+section.lookingfor .thanks{position: absolute; margin-left: 130px; font-size: 20px; font-weight: 600; width: 350px; color:#444; font-family: 'Open Sans', sans-serif;}
+
+/* Post Project Box */
+aside.postProjBox {border:1px solid #EEE; background-image:url(/images/hp/greyHatch.png); background-repeat:repeat; padding:20px 20px;}
+aside.postProjBox div.text {font-size:35px;}		
+
+/* Popular Searches */
+.greyFootSec { background:url(/images/hp/greyShade.png) repeat-x top ; border-width:0px;}
+section.popularSearches .skillTabs {float:left; font-size:16px; padding:5px 0px; border-top:1px #CCC solid; border-bottom:1px #CCC dashed; width:550px;}
+section.popularSearches .skillTabs ul { margin:0px; padding:0px;}
+section.popularSearches .skillTabs ul li { display:block; float:left; list-style-type:none; }
+section.popularSearches .skillTabs ul li.divider {color:#999; padding:3px 10px; font-size:12px; }
+section.popularSearches .skillTabs ul li.tab { cursor:pointer; padding:0px 3px}
+section.popularSearches .skillTabs ul li.tab:hover { background:#EEE;}
+section.popularSearches .skillTabs ul li.active {color:#2F8AA2}
+section.popularSearches .skillTabs ul li.inactive {color:#333;}
+section.popularSearches .skillTabs ul li div {position:absolute; margin:5px 0px 0px 65px;}
+section.popularSearches .skillTabs ul li div#arrow3 {position:absolute; margin:5px 0px 0px 55px;}
+
+section.popularSearches .customSearch {float:right; border:1px solid #ccc; height:30px;  }
+section.popularSearches .customSearch .customSearchBox {width:300px; color:#666; border:0px; margin:1px; padding:6px 10px 7px;    }
+section.popularSearches .customSearch ul  { margin:0px; padding:0px;}
+section.popularSearches .customSearch ul li { display:block; float:left; list-style-type:none;   }
+
+section.popularSearches ul.skillsList  { margin:20px 0px 0px 0px; padding:0px;}
+section.popularSearches ul.skillsList  li { display:block; float:left; list-style-type:none; width:162px; }
+
+
+/*pro side */
+section.popularSearches div.categoryList {float:left; width:260px;}
+section.popularSearches div.categoryList ul {margin:0px; padding:0px;}
+section.popularSearches div.categoryList li {display:block; list-style-type:none; padding:2px;}
+section.popularSearches div.categoryList li.active {color:#333; font-weight:bold}
+section.popularSearches div.categoryList li.inactive {color:#666;}
+section.popularSearches div.categoryList li.inactive:hover {cursor:pointer; text-decoration:underline; background:#FFF;}
+
+section.popularSearches div.subcategoryList {float:left; width:700px; border-left:1px dotted #CCC;}
+section.popularSearches div.subcategoryList ul.skillsListPro  { margin:0px 0px 0px 20px; padding:0px; }
+section.popularSearches div.subcategoryList ul.skillsListPro  li {padding:2px; display:block; float:left; list-style-type:none; width:220px; }
+
+
+
+
+
+
+
+/* Whats new */
+section.whatsnew {float:left; width:450px; margin-right:70px;}
+section.whatsnew header h3 {font-size:22px;}
+section.whatsnew abbr, address {float:left; border:none; font-style:normal; font-size:14px; color:#999; padding:0px 0px 5px 0px }
+section.whatsnew p {font-size:14px; color:#666; padding-bottom:5px; font-family:"Open Sans", sans-serif;}
+
+section.featured{float:left; width:450px}
+
+/* Facebook Likeus */
+section.likeus {border-top:1px dashed #CCC; padding:20px;}
+section.likeus ul {margin:0px; padding:0px;}
+section.likeus ul li {display:block; float:left; list-style:none;}
+section.likeus ul li.likebutton {width: 70px;}
+section.likeus ul li.facebook {width:150px; height:50px; padding-right:30px; border-right:1px dashed #CCC;}
+section.likeus ul li.teaser {margin-top:10px; padding-left:30px; font-size:20px; font-family:"Open Sans", sans-serif;}

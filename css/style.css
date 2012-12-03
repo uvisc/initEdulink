@@ -1985,7 +1985,7 @@ table .span24 {
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-  border: 1px solid #cccccc;
+  border: 1px solid #cccccc; 
   border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -6230,3 +6230,22 @@ section {
     margin-left: 30px;
   }
 }*/
+/*Banner Container*/
+
+div.bannerBG { background:url(../img/BG-home-bammer.png) repeat-x; height:350px; margin-top:40px;}
+section.banner ul {margin:0px; padding:0px;}
+section.banner ul li {float:left; display:block; list-style-type:none}
+section.banner ul li.copy h1 {font-size:30px; line-height: 30px; font-weight:400; font-family: 'Open Sans', sans-serif; padding:0px 0px 20px 0px}
+section.banner ul li.copy p {font-size:20px; color:#999;}
+section.banner ul li.copy {width:600px;}
+section.banner ul li.graphic {
+	clear:both;
+	float:right;
+	vertical-align:top;
+	width:380px;
+}
+section.banner ul li.graphic .computer {position:absolute; margin:-200px 0px 0px 0px; z-index:1}
+
+.buttonGreen {border: 3px solid #D24231;border-color: #C9EB6C #7FB100 #567B00 #9EC536; border-radius: 10px; font-weight: bold;}
+
+.clearfix:after {    content: ".";    display: block;    height: 0;    clear: both;    visibility: hidden;    }	
